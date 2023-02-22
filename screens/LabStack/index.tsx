@@ -15,9 +15,9 @@ const Stack = createStackNavigator();
 
 export function LabStack() {
     return (
-    <Stack.Navigator>
+    <Stack.Navigator screenOptions={{headerShown: false,}}>
       <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Detail" component={Detail} />
     </Stack.Navigator>
-  );
+  )
 }
